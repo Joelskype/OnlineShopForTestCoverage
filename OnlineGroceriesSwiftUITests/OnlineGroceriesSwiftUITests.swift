@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import OnlineGroceriesSwiftUI
+@testable import OnlineShopForTestCoverage
 
 final class OnlineGroceriesSwiftUITests: XCTestCase {
 
