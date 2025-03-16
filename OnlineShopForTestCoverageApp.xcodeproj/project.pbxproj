@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -160,13 +160,13 @@
 		CB9D6EBA2A8D43ED00669923 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		CB9D6EBC2A8D449A00669923 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
 		CB9D6EBE2A8D46FB00669923 /* ForgotPasswordSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordSetView.swift; sourceTree = "<group>"; };
-		CBAFEF052A76C8B5009DF242 /* OnlineGroceriesSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineGroceriesSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBAFEF052A76C8B5009DF242 /* OnlineShopForTestCoverage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineShopForTestCoverage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAFEF082A76C8B5009DF242 /* OnlineGroceriesSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGroceriesSwiftUIApp.swift; sourceTree = "<group>"; };
 		CBAFEF0C2A76C8B7009DF242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBAFEF0F2A76C8B7009DF242 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CBAFEF152A76C8B8009DF242 /* OnlineGroceriesSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineGroceriesSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBAFEF152A76C8B8009DF242 /* OnlineShopForTestCoverageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineShopForTestCoverageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAFEF192A76C8B8009DF242 /* OnlineGroceriesSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGroceriesSwiftUITests.swift; sourceTree = "<group>"; };
-		CBAFEF1F2A76C8B8009DF242 /* OnlineGroceriesSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineGroceriesSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBAFEF1F2A76C8B8009DF242 /* OnlineShopForTestCoverageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineShopForTestCoverageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAFEF232A76C8B8009DF242 /* OnlineGroceriesSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGroceriesSwiftUIUITests.swift; sourceTree = "<group>"; };
 		CBAFEF252A76C8B8009DF242 /* OnlineGroceriesSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGroceriesSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CBAFEF332A76C95B009DF242 /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gilroy-Medium.ttf"; path = "OnlineGroceriesSwiftUI/Gilroy-Medium.ttf"; sourceTree = SOURCE_ROOT; };
@@ -206,6 +206,11 @@
 		CBEC7E292A86076500D41C37 /* PromoCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCodeView.swift; sourceTree = "<group>"; };
 		CBFE45E92AB8192600751656 /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		2E60D4B12D87027A00EE63FA /* UITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = UITests; sourceTree = "<group>"; };
+		2E60D4B92D8702B500EE63FA /* TestPages */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TestPages; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CBAFEF022A76C8B5009DF242 /* Frameworks */ = {
@@ -302,9 +307,9 @@
 		CBAFEF062A76C8B5009DF242 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CBAFEF052A76C8B5009DF242 /* OnlineGroceriesSwiftUI.app */,
-				CBAFEF152A76C8B8009DF242 /* OnlineGroceriesSwiftUITests.xctest */,
-				CBAFEF1F2A76C8B8009DF242 /* OnlineGroceriesSwiftUIUITests.xctest */,
+				CBAFEF052A76C8B5009DF242 /* OnlineShopForTestCoverage.app */,
+				CBAFEF152A76C8B8009DF242 /* OnlineShopForTestCoverageTests.xctest */,
+				CBAFEF1F2A76C8B8009DF242 /* OnlineShopForTestCoverageUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -338,6 +343,8 @@
 		CBAFEF182A76C8B8009DF242 /* OnlineGroceriesSwiftUITests */ = {
 			isa = PBXGroup;
 			children = (
+				2E60D4B92D8702B500EE63FA /* TestPages */,
+				2E60D4B12D87027A00EE63FA /* UITests */,
 				CBAFEF192A76C8B8009DF242 /* OnlineGroceriesSwiftUITests.swift */,
 			);
 			path = OnlineGroceriesSwiftUITests;
@@ -478,9 +485,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CBAFEF042A76C8B5009DF242 /* OnlineGroceriesSwiftUI */ = {
+		CBAFEF042A76C8B5009DF242 /* OnlineShopForTestCoverage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBAFEF292A76C8B8009DF242 /* Build configuration list for PBXNativeTarget "OnlineGroceriesSwiftUI" */;
+			buildConfigurationList = CBAFEF292A76C8B8009DF242 /* Build configuration list for PBXNativeTarget "OnlineShopForTestCoverage" */;
 			buildPhases = (
 				CBAFEF012A76C8B5009DF242 /* Sources */,
 				CBAFEF022A76C8B5009DF242 /* Frameworks */,
@@ -490,18 +497,18 @@
 			);
 			dependencies = (
 			);
-			name = OnlineGroceriesSwiftUI;
+			name = OnlineShopForTestCoverage;
 			packageProductDependencies = (
 				CBC747822A76D78200DD527C /* CountryPicker */,
 				CB6C33332A7CBA77007CECA2 /* SDWebImageSwiftUI */,
 			);
 			productName = OnlineGroceriesSwiftUI;
-			productReference = CBAFEF052A76C8B5009DF242 /* OnlineGroceriesSwiftUI.app */;
+			productReference = CBAFEF052A76C8B5009DF242 /* OnlineShopForTestCoverage.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CBAFEF142A76C8B8009DF242 /* OnlineGroceriesSwiftUITests */ = {
+		CBAFEF142A76C8B8009DF242 /* OnlineShopForTestCoverageTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBAFEF2C2A76C8B8009DF242 /* Build configuration list for PBXNativeTarget "OnlineGroceriesSwiftUITests" */;
+			buildConfigurationList = CBAFEF2C2A76C8B8009DF242 /* Build configuration list for PBXNativeTarget "OnlineShopForTestCoverageTests" */;
 			buildPhases = (
 				CBAFEF112A76C8B8009DF242 /* Sources */,
 				CBAFEF122A76C8B8009DF242 /* Frameworks */,
@@ -512,14 +519,18 @@
 			dependencies = (
 				CBAFEF172A76C8B8009DF242 /* PBXTargetDependency */,
 			);
-			name = OnlineGroceriesSwiftUITests;
+			fileSystemSynchronizedGroups = (
+				2E60D4B12D87027A00EE63FA /* UITests */,
+				2E60D4B92D8702B500EE63FA /* TestPages */,
+			);
+			name = OnlineShopForTestCoverageTests;
 			productName = OnlineGroceriesSwiftUITests;
-			productReference = CBAFEF152A76C8B8009DF242 /* OnlineGroceriesSwiftUITests.xctest */;
+			productReference = CBAFEF152A76C8B8009DF242 /* OnlineShopForTestCoverageTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CBAFEF1E2A76C8B8009DF242 /* OnlineGroceriesSwiftUIUITests */ = {
+		CBAFEF1E2A76C8B8009DF242 /* OnlineShopForTestCoverageUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBAFEF2F2A76C8B8009DF242 /* Build configuration list for PBXNativeTarget "OnlineGroceriesSwiftUIUITests" */;
+			buildConfigurationList = CBAFEF2F2A76C8B8009DF242 /* Build configuration list for PBXNativeTarget "OnlineShopForTestCoverageUITests" */;
 			buildPhases = (
 				CBAFEF1B2A76C8B8009DF242 /* Sources */,
 				CBAFEF1C2A76C8B8009DF242 /* Frameworks */,
@@ -530,9 +541,9 @@
 			dependencies = (
 				CBAFEF212A76C8B8009DF242 /* PBXTargetDependency */,
 			);
-			name = OnlineGroceriesSwiftUIUITests;
+			name = OnlineShopForTestCoverageUITests;
 			productName = OnlineGroceriesSwiftUIUITests;
-			productReference = CBAFEF1F2A76C8B8009DF242 /* OnlineGroceriesSwiftUIUITests.xctest */;
+			productReference = CBAFEF1F2A76C8B8009DF242 /* OnlineShopForTestCoverageUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -558,7 +569,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CBAFEF002A76C8B4009DF242 /* Build configuration list for PBXProject "OnlineGroceriesSwiftUI" */;
+			buildConfigurationList = CBAFEF002A76C8B4009DF242 /* Build configuration list for PBXProject "OnlineShopForTestCoverageApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -575,9 +586,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CBAFEF042A76C8B5009DF242 /* OnlineGroceriesSwiftUI */,
-				CBAFEF142A76C8B8009DF242 /* OnlineGroceriesSwiftUITests */,
-				CBAFEF1E2A76C8B8009DF242 /* OnlineGroceriesSwiftUIUITests */,
+				CBAFEF042A76C8B5009DF242 /* OnlineShopForTestCoverage */,
+				CBAFEF142A76C8B8009DF242 /* OnlineShopForTestCoverageTests */,
+				CBAFEF1E2A76C8B8009DF242 /* OnlineShopForTestCoverageUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -719,12 +730,12 @@
 /* Begin PBXTargetDependency section */
 		CBAFEF172A76C8B8009DF242 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CBAFEF042A76C8B5009DF242 /* OnlineGroceriesSwiftUI */;
+			target = CBAFEF042A76C8B5009DF242 /* OnlineShopForTestCoverage */;
 			targetProxy = CBAFEF162A76C8B8009DF242 /* PBXContainerItemProxy */;
 		};
 		CBAFEF212A76C8B8009DF242 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CBAFEF042A76C8B5009DF242 /* OnlineGroceriesSwiftUI */;
+			target = CBAFEF042A76C8B5009DF242 /* OnlineShopForTestCoverage */;
 			targetProxy = CBAFEF202A76C8B8009DF242 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -929,7 +940,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnlineGroceriesSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OnlineGroceriesSwiftUI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnlineShopForTestCoverage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OnlineShopForTestCoverage";
 			};
 			name = Debug;
 		};
@@ -948,7 +959,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnlineGroceriesSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OnlineGroceriesSwiftUI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnlineShopForTestCoverage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OnlineShopForTestCoverage";
 			};
 			name = Release;
 		};
@@ -989,7 +1000,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CBAFEF002A76C8B4009DF242 /* Build configuration list for PBXProject "OnlineGroceriesSwiftUI" */ = {
+		CBAFEF002A76C8B4009DF242 /* Build configuration list for PBXProject "OnlineShopForTestCoverageApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBAFEF272A76C8B8009DF242 /* Debug */,
@@ -998,7 +1009,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBAFEF292A76C8B8009DF242 /* Build configuration list for PBXNativeTarget "OnlineGroceriesSwiftUI" */ = {
+		CBAFEF292A76C8B8009DF242 /* Build configuration list for PBXNativeTarget "OnlineShopForTestCoverage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBAFEF2A2A76C8B8009DF242 /* Debug */,
@@ -1007,7 +1018,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBAFEF2C2A76C8B8009DF242 /* Build configuration list for PBXNativeTarget "OnlineGroceriesSwiftUITests" */ = {
+		CBAFEF2C2A76C8B8009DF242 /* Build configuration list for PBXNativeTarget "OnlineShopForTestCoverageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBAFEF2D2A76C8B8009DF242 /* Debug */,
@@ -1016,7 +1027,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBAFEF2F2A76C8B8009DF242 /* Build configuration list for PBXNativeTarget "OnlineGroceriesSwiftUIUITests" */ = {
+		CBAFEF2F2A76C8B8009DF242 /* Build configuration list for PBXNativeTarget "OnlineShopForTestCoverageUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBAFEF302A76C8B8009DF242 /* Debug */,
