@@ -249,12 +249,20 @@
 			);
 			target = CBAFEF142A76C8B8009DF242 /* OnlineShopForTestCoverageTests */;
 		};
+		2E7AA27F2D89BB550000AD64 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Buttons.swift,
+			);
+			target = CBAFEF042A76C8B5009DF242 /* OnlineShopForTestCoverage */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		2E60D4B12D87027A00EE63FA /* UITests */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (2E60D53B2D8707C600EE63FA /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 2E60D53A2D87072D00EE63FA /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = UITests; sourceTree = "<group>"; };
 		2E60D4B92D8702B500EE63FA /* TestPages */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (2E60D4E82D87063300EE63FA /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 2E60D4E72D87062200EE63FA /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = TestPages; sourceTree = "<group>"; };
 		2E60D4DD2D8705F500EE63FA /* Stash */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (2E60D4DE2D8705FD00EE63FA /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 2E60D4DF2D8705FD00EE63FA /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Stash; sourceTree = "<group>"; };
+		2E7AA2792D89BB2F0000AD64 /* Accessibility */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (2E7AA27F2D89BB550000AD64 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Accessibility; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -405,6 +413,7 @@
 		CBAFEF222A76C8B8009DF242 /* OnlineGroceriesSwiftUIUITests */ = {
 			isa = PBXGroup;
 			children = (
+				2E7AA2792D89BB2F0000AD64 /* Accessibility */,
 				2E60D4DD2D8705F500EE63FA /* Stash */,
 				2E60D4B92D8702B500EE63FA /* TestPages */,
 				2E60D4B12D87027A00EE63FA /* UITests */,
@@ -576,6 +585,7 @@
 				2E60D4B12D87027A00EE63FA /* UITests */,
 				2E60D4B92D8702B500EE63FA /* TestPages */,
 				2E60D4DD2D8705F500EE63FA /* Stash */,
+				2E7AA2792D89BB2F0000AD64 /* Accessibility */,
 			);
 			name = OnlineShopForTestCoverageTests;
 			productName = OnlineGroceriesSwiftUITests;
