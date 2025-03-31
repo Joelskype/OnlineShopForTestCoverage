@@ -27,17 +27,33 @@ final class WelcomeViewPageObject {
         app.buttons.element(matching: NSPredicate(format: "label == 'Continue with Email Sign In'"))
     }
     
+    var viewBackground: XCUIElement {
+        app.images.element(matching: NSPredicate(format: "label == 'welcom_bg'"))
+    }
+    
     //Actions
+    
+    func getGetStartedButtonLabel() -> String {
+        getStartedButton.label
+    }
+    
+    func checkGetStartedButtonLabel() {
+        XCTAssertTrue(getGetStartedButtonLabel() == "Get Started")
+    }
+    
     
     func tapGetStartedButton() {
         getStartedButton.tap()
     }
     
+    
     func checkButtonsExisting() {
-        
-        XCTAssertTrue(signInButton.exists)
-        
-        
+        XCTAssertTrue(signInButton.isHittable)
+    }
+    
+    
+    func checkBackgroundImage() {
+        XCTAssertTrue(viewBackground.isHittable)
     }
 }
 

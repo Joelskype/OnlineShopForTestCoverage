@@ -101,6 +101,7 @@ struct LoginView: View {
                             .scaledToFit()
                             .frame(width: 20, height: 20)
                     }
+                    .accessibilityIdentifier(Accessibility.Buttons.backButton)
                     
                     Spacer()
 
