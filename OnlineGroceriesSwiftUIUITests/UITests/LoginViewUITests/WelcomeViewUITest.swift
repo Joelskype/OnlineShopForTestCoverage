@@ -12,6 +12,7 @@ final class WelcomeViewUITest: XCTestCase {
 
     let app = XCUIApplication()
     lazy var welcomeViewPage = WelcomeViewPageObject(app: app)
+   
     
     override func setUpWithError() throws {
         
@@ -36,7 +37,7 @@ final class WelcomeViewUITest: XCTestCase {
     }
     
     
-    func testWelcomeBacground() {
+    func testWelcomeBackground() {
         welcomeViewPage
             .checkBackgroundImage()
     }
@@ -54,6 +55,18 @@ final class WelcomeViewUITest: XCTestCase {
             .tapGetStartedButton()
         welcomeViewPage
             .checkButtonsExisting()
+    }
+    
+    
+    func testTapGetstartedAfterFolding() {
+        welcomeViewPage
+            .tapGetstartedAafterFolding()
+    }
+    
+    
+    func testTapGetstartedAfterTerminate() {
+        welcomeViewPage
+            .tapGetStartedButtonAfterTerminate()
     }
     
     

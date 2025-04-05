@@ -32,7 +32,7 @@ struct LoginView: View {
                     .padding(.bottom, .screenWidth * 0.1)
                 
                 
-                Text("Loging")
+                Text("Login")
                     .font(.customfont(.semibold, fontSize: 26))
                     .foregroundColor(.primaryText)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
@@ -125,7 +125,8 @@ struct LoginView: View {
         .navigationBarBackButtonHidden(true)
         .navigationBarHidden(true)
         .ignoresSafeArea()
-        
+        .accessibilityElement()
+        .accessibilityIdentifier(Accessibility.Views.loginView)
     }
 }
 

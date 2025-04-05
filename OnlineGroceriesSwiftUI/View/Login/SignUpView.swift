@@ -123,6 +123,7 @@ struct SignUpView: View {
                             .scaledToFit()
                             .frame(width: 25, height: 25)
                     }
+                    .accessibilityIdentifier(Accessibility.Buttons.backButton)
                     
                     Spacer()
 
@@ -141,6 +142,8 @@ struct SignUpView: View {
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
         .ignoresSafeArea()
+        .accessibilityElement()
+        .accessibilityIdentifier(Accessibility.Views.signupView)
     }
 }
 

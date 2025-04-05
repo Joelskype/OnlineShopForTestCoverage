@@ -12,11 +12,9 @@ import SDWebImage
 final class SignInViewPageObject {
     
     private let app: XCUIApplication
-    private let welcomeViewPageObject: WelcomeViewPageObject
     
-    init(app: XCUIApplication, welcomeViewPageObject: WelcomeViewPageObject) {
+    init(app: XCUIApplication) {
         self.app = app
-        self.welcomeViewPageObject = welcomeViewPageObject
     }
     
     
@@ -55,12 +53,19 @@ final class SignInViewPageObject {
         app.buttons[Accessibility.Buttons.backButton]
     }
     
+    var loginView: XCUIElement {
+        app.otherElements[Accessibility.Views.loginView]
+    }
+    
+    var signupView: XCUIElement {
+        app.otherElements[Accessibility.Views.signupView]
+    }
+    
     
     //Actions
     
     func scrollingScrollView() {
         
-        welcomeViewPageObject.tapGetStartedButton()
         scrollView.swipeDown()
         sleep(2)
         scrollView.swipeUp()
@@ -69,8 +74,7 @@ final class SignInViewPageObject {
     }
     
     func checkElementsExising() {
-        welcomeViewPageObject
-            .tapGetStartedButton()
+    
         XCTAssertTrue(headerTextField.exists)
         XCTAssertTrue(signInButton.isHittable)
         XCTAssertTrue(signUpButton.isHittable)
@@ -81,18 +85,48 @@ final class SignInViewPageObject {
     }
     
     func signInScreenOpen() {
-        welcomeViewPageObject
-            .tapGetStartedButton()
         signInButton.tap()
         XCTAssertTrue(backButton.isHittable)
     }
     
-    func returnToSignInView() {
-        welcomeViewPageObject
-            .tapGetStartedButton()
+    
+    func signUpScreenOpen() {
+        signUpButton.tap()
+        XCTAssertTrue(backButton.isHittable)
+    }
+    
+    
+    func returnToSignInViewFromLogin() {
         signInButton.tap()
         backButton.tap()
         XCTAssertTrue(scrollView.isHittable)
     }
-
+    
+    
+    func returnToSignInViewFromSignUp() {
+        signUpButton.tap()
+        backButton.tap()
+        XCTAssertTrue(scrollView.isHittable)
+    }
+    
+    
+    func doubleEnterOnLogscreen() {
+        signInButton.tap()
+        XCTAssertTrue(loginView.isHittable)
+        backButton.tap()
+        XCTAssertTrue(scrollView.isHittable)
+        signInButton.tap()
+        XCTAssertTrue(loginView.isHittable)
+    }
+    
+    
+    func doubleEnterOnSignUpScreen() {
+        signUpButton.tap()
+        XCTAssertTrue(signupView.isHittable)
+        backButton.tap()
+        XCTAssertTrue(scrollView.isHittable)
+        signUpButton.tap()
+        
+    }
+    //TODO: повторный вход на экран авторизации, после выхода. Проверки для каждой кнопки
 }

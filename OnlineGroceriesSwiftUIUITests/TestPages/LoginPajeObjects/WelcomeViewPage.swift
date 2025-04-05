@@ -31,6 +31,9 @@ final class WelcomeViewPageObject {
         app.images.element(matching: NSPredicate(format: "label == 'welcom_bg'"))
     }
     
+    
+    
+                           
     //Actions
     
     func getGetStartedButtonLabel() -> String {
@@ -54,6 +57,28 @@ final class WelcomeViewPageObject {
     
     func checkBackgroundImage() {
         XCTAssertTrue(viewBackground.isHittable)
+    }
+    
+    func tapGetstartedAafterFolding() {
+        
+        let signInPage = SignInViewPageObject(app: app)
+        
+        XCUIDevice.shared.press(.home)
+        sleep(2)
+        app.activate()
+        XCTAssertTrue(getStartedButton.exists)
+        getStartedButton.tap()
+        XCTAssertTrue(signInPage.scrollView.isHittable)
+    }
+    
+    func tapGetStartedButtonAfterTerminate() {
+        let signInPage = SignInViewPageObject(app: app)
+        app.terminate()
+        sleep(1)
+        app.launch()
+        XCTAssertTrue(getStartedButton.exists)
+        getStartedButton.tap()
+        XCTAssertTrue(signInPage.scrollView.isHittable)
     }
 }
 

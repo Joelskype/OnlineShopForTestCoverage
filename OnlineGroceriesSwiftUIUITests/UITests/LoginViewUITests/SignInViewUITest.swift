@@ -11,12 +11,14 @@ import SDWebImage
 final class SignInViewUITest: XCTestCase {
     
     let app = XCUIApplication()
-    lazy var signInViewPage = SignInViewPageObject(app: app, welcomeViewPageObject: welcomeViewPageObject)
-    lazy var welcomeViewPageObject = WelcomeViewPageObject(app: app)
+    lazy var signInViewPage = SignInViewPageObject(app: app)
 
     override func setUpWithError() throws {
+        let welcomeViewPageObject = WelcomeViewPageObject(app: app)
         continueAfterFailure = false
         app.launch()
+        welcomeViewPageObject
+            .tapGetStartedButton()
     }
 
     override func tearDownWithError() throws {
@@ -48,8 +50,13 @@ final class SignInViewUITest: XCTestCase {
     func testReturnToSignInView() {
         
         signInViewPage
-            .returnToSignInView()
+            .returnToSignInViewFromLogin()
         
+    }
+    
+    func testEnterOnLoginView() {
+        signInViewPage
+            .doubleEnterOnSignUpScreen()
     }
     
 }
