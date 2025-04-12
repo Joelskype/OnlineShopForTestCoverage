@@ -19,6 +19,7 @@ struct LineTextField: View {
                 .font(.customfont(.semibold, fontSize: 16))
                 .foregroundColor(.textTitle)
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                .accessibilityIdentifier(Accessibility.StaticText.loginEmailFieldHeader)
             
            
             TextField(placholder, text: $txt)
@@ -46,6 +47,7 @@ struct LineSecureField: View {
                 .font(.customfont(.semibold, fontSize: 16))
                 .foregroundColor(.textTitle)
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                .accessibilityIdentifier(Accessibility.StaticText.loginPasswordFieldHeader)
             
             if (isShowPassword) {
                 TextField(placholder, text: $txt)
@@ -54,15 +56,18 @@ struct LineSecureField: View {
                     .modifier( ShowButton(isShow: $isShowPassword))
                     
                     .frame(height:40)
+                    .accessibilityIdentifier(Accessibility.TextField.nonsecureTextField)
             }else{
                 SecureField(placholder, text: $txt)
                     .autocapitalization(.none)
                      .modifier( ShowButton(isShow: $isShowPassword))
                      .frame(height:40)
+                     .accessibilityIdentifier(Accessibility.TextField.secureTextField)
                 
             }
             Divider()
         }
+        .accessibilityElement()
     }
 }
 

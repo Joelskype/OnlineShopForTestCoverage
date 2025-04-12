@@ -38,7 +38,7 @@ struct SignInView: View {
                         .foregroundColor(.primaryText)
                         .multilineTextAlignment(.leading)
                         .padding(.bottom , 25)
-                        .accessibilityIdentifier(Accessibility.StaticText.headerTextField)
+                        .accessibilityIdentifier(Accessibility.StaticText.headerStaticText)
                     
                    
                     
@@ -81,7 +81,7 @@ struct SignInView: View {
                         .multilineTextAlignment(.center)
                         .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
                         .padding(.bottom , 25)
-                        .accessibilityIdentifier(Accessibility.StaticText.smallTextField)
+                        .accessibilityIdentifier(Accessibility.StaticText.smallStaticText)
                     
                     
                     Button {
@@ -129,7 +129,7 @@ struct SignInView: View {
                 .padding(.top, .topInsets +  .screenWidth * 0.6  )
                 
             }
-            .accessibilityIdentifier(Accessibility.Views.scrollView)
+            .accessibilityIdentifier(Accessibility.Views.signInScrollView)
             
                 
         }

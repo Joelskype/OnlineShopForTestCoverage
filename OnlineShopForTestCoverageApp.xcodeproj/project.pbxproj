@@ -227,6 +227,7 @@
 		2E60D4E72D87062200EE63FA /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				LoginPajeObjects/LoginViewPageObject.swift,
 				LoginPajeObjects/SIgnInViewPage.swift,
 				LoginPajeObjects/WelcomeViewPage.swift,
 			);
@@ -235,6 +236,7 @@
 		2E60D4E82D87063300EE63FA /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				LoginPajeObjects/LoginViewPageObject.swift,
 				LoginPajeObjects/SIgnInViewPage.swift,
 				LoginPajeObjects/WelcomeViewPage.swift,
 			);
@@ -243,6 +245,7 @@
 		2E60D53A2D87072D00EE63FA /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				LoginViewUITests/LoginViewUITest.swift,
 				LoginViewUITests/SignInViewUITest.swift,
 				LoginViewUITests/WelcomeViewUITest.swift,
 			);
@@ -251,6 +254,7 @@
 		2E60D53B2D8707C600EE63FA /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				LoginViewUITests/LoginViewUITest.swift,
 				LoginViewUITests/SignInViewUITest.swift,
 				LoginViewUITests/WelcomeViewUITest.swift,
 			);

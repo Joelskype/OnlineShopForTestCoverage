@@ -37,18 +37,26 @@ struct LoginView: View {
                     .foregroundColor(.primaryText)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                     .padding(.bottom, 4)
+                    .accessibilityIdentifier(Accessibility.StaticText.loginHeaderStaticText)
                 
                 Text("Enter your emails and password")
                     .font(.customfont(.semibold, fontSize: 16))
                     .foregroundColor(.secondaryText)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                     .padding(.bottom, .screenWidth * 0.1)
+                    .accessibilityIdentifier(Accessibility.StaticText.loginSmallStaticText)
+
                 
                 LineTextField( title: "Email", placholder: "Enter your email address", txt: $loginVM.txtEmail, keyboardType: .emailAddress)
                     .padding(.bottom, .screenWidth * 0.07)
+        
+
                 
                 LineSecureField( title: "Password", placholder: "Enter your password", txt: $loginVM.txtPassword, isShowPassword: $loginVM.isShowPassword)
                     .padding(.bottom, .screenWidth * 0.02)
+                    
+                
+
                 
                 
                 NavigationLink {
@@ -60,11 +68,13 @@ struct LoginView: View {
                 }
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
                 .padding(.bottom, .screenWidth * 0.03)
+                .accessibilityIdentifier(Accessibility.Buttons.forgotPasswordButton)
                 
                 RoundButton(title: "Log In") {
                     loginVM.serviceCallLogin()
                 }
                 .padding(.bottom, .screenWidth * 0.05)
+                .accessibilityIdentifier(Accessibility.Buttons.loginButton)
                 
                 
                 NavigationLink {
@@ -80,6 +90,7 @@ struct LoginView: View {
                             .foregroundColor(.primaryApp)
                     }
                 }
+                .accessibilityIdentifier(Accessibility.Buttons.dontHaveAccButton)
 
                
                 
@@ -126,7 +137,7 @@ struct LoginView: View {
         .navigationBarHidden(true)
         .ignoresSafeArea()
         .accessibilityElement()
-        .accessibilityIdentifier(Accessibility.Views.loginView)
+        .accessibilityIdentifier(Accessibility.Views.signinView)
     }
 }
 

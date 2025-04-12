@@ -134,9 +134,14 @@ struct ShowButton: ViewModifier {
             } label: {
                 Image(systemName: !isShow ? "eye.fill" : "eye.slash.fill" )
                     .foregroundColor(.textTitle)
+                    
             }
+            .accessibilityIdentifier(!isShow ? Accessibility.Buttons.eyeFill : Accessibility.Buttons.eyeSlash)
+            
+            
 
         }
+        .accessibilityElement()
     }
 }
 

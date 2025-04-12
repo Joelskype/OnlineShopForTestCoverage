@@ -59,4 +59,15 @@ final class SignInViewUITest: XCTestCase {
             .doubleEnterOnSignUpScreen()
     }
     
+    
+    func testEnterOnSignInAfterFolding() {
+        signInViewPage
+            .signInAfterFolding()
+    }
+    
+    
+    func testEnterOnSignInAfterTerminate() {
+        signInViewPage
+            .signInAfterTerminate()
+    }
 }

@@ -101,6 +101,7 @@ struct SignUpView: View {
                                 .foregroundColor(.primaryApp)
                         }
                     }
+                    .accessibilityIdentifier(Accessibility.Buttons.alreadyHaveAccButton)
 
                    
                     
@@ -110,6 +111,7 @@ struct SignUpView: View {
                 .padding(.horizontal, 20)
                 .padding(.bottom, .bottomInsets)
             }
+            
             
             
             VStack {

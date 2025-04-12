@@ -22,11 +22,11 @@ final class SignInViewPageObject {
     
     
     var scrollView: XCUIElement {
-        app.scrollViews[Accessibility.Views.scrollView]
+        app.scrollViews[Accessibility.Views.signInScrollView]
     }
     
     var headerTextField: XCUIElement {
-        app.staticTexts[Accessibility.StaticText.headerTextField]
+        app.staticTexts[Accessibility.StaticText.headerStaticText]
     }
     
     var signInButton: XCUIElement {
@@ -38,7 +38,7 @@ final class SignInViewPageObject {
     }
     
     var smallTextField: XCUIElement {
-        app.staticTexts[Accessibility.StaticText.smallTextField]
+        app.staticTexts[Accessibility.StaticText.smallStaticText]
     }
     
     var googleButton: XCUIElement {
@@ -53,8 +53,8 @@ final class SignInViewPageObject {
         app.buttons[Accessibility.Buttons.backButton]
     }
     
-    var loginView: XCUIElement {
-        app.otherElements[Accessibility.Views.loginView]
+    var signinView: XCUIElement {
+        app.otherElements[Accessibility.Views.signinView]
     }
     
     var signupView: XCUIElement {
@@ -112,11 +112,11 @@ final class SignInViewPageObject {
     
     func doubleEnterOnLogscreen() {
         signInButton.tap()
-        XCTAssertTrue(loginView.isHittable)
+        XCTAssertTrue(signinView.isHittable)
         backButton.tap()
         XCTAssertTrue(scrollView.isHittable)
         signInButton.tap()
-        XCTAssertTrue(loginView.isHittable)
+        XCTAssertTrue(signinView.isHittable)
     }
     
     
@@ -128,5 +128,26 @@ final class SignInViewPageObject {
         signUpButton.tap()
         
     }
-    //TODO: повторный вход на экран авторизации, после выхода. Проверки для каждой кнопки
+    
+    
+    func signInAfterFolding() {
+        XCUIDevice.shared.press(.home)
+        app.activate()
+        sleep(1)
+        signInButton.tap()
+        XCTAssertTrue(signinView.isHittable)
+    }
+    
+    
+    func signInAfterTerminate() {
+        let welcomeViewPageObject = WelcomeViewPageObject(app: app)
+        
+        app.terminate()
+        app.launch()
+        sleep(1)
+        welcomeViewPageObject
+            .getStartedButton.tap()
+        signInButton.tap()
+        XCTAssertTrue(signinView.isHittable)
+    }
 }
