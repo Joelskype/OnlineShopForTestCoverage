@@ -21,8 +21,8 @@ public enum Accessibility {
     public enum Views {
         
         public static let signInScrollView = "Scroll" + Objects.view
-        public static let signinView = "Signin" + Objects.view
-        public static let signupView = "SignUp" + Objects.view
+        public static let logInView = "Signin" + Objects.view
+//        public static let signupView = "SignUp" + Objects.view
         public static let signUpScrollView = "SignUpScroll" + Objects.view
         
     }

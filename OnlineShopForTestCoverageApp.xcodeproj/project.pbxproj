@@ -229,6 +229,7 @@
 			membershipExceptions = (
 				LoginPajeObjects/LoginViewPageObject.swift,
 				LoginPajeObjects/SIgnInViewPage.swift,
+				LoginPajeObjects/SignUpPageObject.swift,
 				LoginPajeObjects/WelcomeViewPage.swift,
 			);
 			target = CBAFEF1E2A76C8B8009DF242 /* OnlineShopForTestCoverageUITests */;
@@ -238,6 +239,7 @@
 			membershipExceptions = (
 				LoginPajeObjects/LoginViewPageObject.swift,
 				LoginPajeObjects/SIgnInViewPage.swift,
+				LoginPajeObjects/SignUpPageObject.swift,
 				LoginPajeObjects/WelcomeViewPage.swift,
 			);
 			target = CBAFEF142A76C8B8009DF242 /* OnlineShopForTestCoverageTests */;

@@ -21,7 +21,7 @@ final class SignInViewPageObject {
    //Elements
     
     
-    var scrollView: XCUIElement {
+    var signInScrollView: XCUIElement {
         app.scrollViews[Accessibility.Views.signInScrollView]
     }
     
@@ -53,12 +53,12 @@ final class SignInViewPageObject {
         app.buttons[Accessibility.Buttons.backButton]
     }
     
-    var signinView: XCUIElement {
-        app.otherElements[Accessibility.Views.signinView]
+    var logInView: XCUIElement {
+        app.otherElements[Accessibility.Views.logInView]
     }
     
-    var signupView: XCUIElement {
-        app.otherElements[Accessibility.Views.signupView]
+    var signUpScrollView: XCUIElement {
+        app.scrollViews[Accessibility.Views.signUpScrollView]
     }
     
     
@@ -66,9 +66,9 @@ final class SignInViewPageObject {
     
     func scrollingScrollView() {
         
-        scrollView.swipeDown()
+        signInScrollView.swipeDown()
         sleep(2)
-        scrollView.swipeUp()
+        signInScrollView.swipeUp()
         
         
     }
@@ -99,33 +99,35 @@ final class SignInViewPageObject {
     func returnToSignInViewFromLogin() {
         signInButton.tap()
         backButton.tap()
-        XCTAssertTrue(scrollView.isHittable)
+        XCTAssertTrue(signInScrollView.isHittable)
     }
     
     
     func returnToSignInViewFromSignUp() {
         signUpButton.tap()
         backButton.tap()
-        XCTAssertTrue(scrollView.isHittable)
+        XCTAssertTrue(signInScrollView.isHittable)
     }
     
     
     func doubleEnterOnLogscreen() {
         signInButton.tap()
-        XCTAssertTrue(signinView.isHittable)
+        XCTAssertTrue(logInView.isHittable)
         backButton.tap()
-        XCTAssertTrue(scrollView.isHittable)
+        XCTAssertTrue(signInScrollView.isHittable)
         signInButton.tap()
-        XCTAssertTrue(signinView.isHittable)
+        XCTAssertTrue(logInView.isHittable)
     }
     
     
     func doubleEnterOnSignUpScreen() {
         signUpButton.tap()
-        XCTAssertTrue(signupView.isHittable)
+        print(app.debugDescription)
+        XCTAssertTrue(signUpScrollView.isHittable)
         backButton.tap()
-        XCTAssertTrue(scrollView.isHittable)
+        XCTAssertTrue(signInScrollView.isHittable)
         signUpButton.tap()
+        XCTAssertTrue(signUpScrollView.isHittable)
         
     }
     
@@ -135,7 +137,7 @@ final class SignInViewPageObject {
         app.activate()
         sleep(1)
         signInButton.tap()
-        XCTAssertTrue(signinView.isHittable)
+        XCTAssertTrue(logInView.isHittable)
     }
     
     
@@ -148,6 +150,6 @@ final class SignInViewPageObject {
         welcomeViewPageObject
             .getStartedButton.tap()
         signInButton.tap()
-        XCTAssertTrue(signinView.isHittable)
+        XCTAssertTrue(logInView.isHittable)
     }
 }

@@ -111,6 +111,7 @@ struct SignUpView: View {
                 .padding(.horizontal, 20)
                 .padding(.bottom, .bottomInsets)
             }
+            .accessibilityIdentifier(Accessibility.Views.signUpScrollView)
             
             
             
@@ -144,8 +145,8 @@ struct SignUpView: View {
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
         .ignoresSafeArea()
-        .accessibilityElement()
-        .accessibilityIdentifier(Accessibility.Views.signupView)
+//        .accessibilityElement()
+//        .accessibilityIdentifier(Accessibility.Views.signupView)
     }
 }
 

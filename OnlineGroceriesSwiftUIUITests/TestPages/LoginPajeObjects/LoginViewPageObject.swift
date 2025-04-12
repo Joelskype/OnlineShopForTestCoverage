@@ -82,13 +82,10 @@ final class LoginViewPageObject {
     
     
     var alreadyHaveAccButton: XCUIElement {
-        app.otherElements[Accessibility.Buttons.alreadyHaveAccButton]
+        app.buttons[Accessibility.Buttons.alreadyHaveAccButton]
     }
     
     
-    var signUpScrollView: XCUIElement {
-        app.otherElements[Accessibility.Views.signupView]
-    }
     
     //Actions
     
@@ -146,10 +143,14 @@ final class LoginViewPageObject {
     
     func checkNavigationBtwSignInAndSignUp() {
         
+        let signUpPageObject = SignUpPageObject(app: app)
+        let signUpScrollView = signUpPageObject.signUpScrollView
+        
         dontHaveAccButton.tap()
-//        signUpScrollView.swipeUp()
-//        alreadyHaveAccButton.tap()
         print(app.debugDescription)
+        signUpScrollView.swipeUp()
+        alreadyHaveAccButton.tap()
+        
         
     }
 }

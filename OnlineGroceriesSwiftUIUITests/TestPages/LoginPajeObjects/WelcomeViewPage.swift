@@ -68,7 +68,7 @@ final class WelcomeViewPageObject {
         app.activate()
         XCTAssertTrue(getStartedButton.exists)
         getStartedButton.tap()
-        XCTAssertTrue(signInPage.scrollView.isHittable)
+        XCTAssertTrue(signInPage.signInScrollView.isHittable)
     }
     
     func tapGetStartedButtonAfterTerminate() {
@@ -78,7 +78,7 @@ final class WelcomeViewPageObject {
         app.launch()
         XCTAssertTrue(getStartedButton.exists)
         getStartedButton.tap()
-        XCTAssertTrue(signInPage.scrollView.isHittable)
+        XCTAssertTrue(signInPage.signInScrollView.isHittable)
     }
 }
 

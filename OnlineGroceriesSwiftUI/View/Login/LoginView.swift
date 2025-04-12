@@ -137,7 +137,7 @@ struct LoginView: View {
         .navigationBarHidden(true)
         .ignoresSafeArea()
         .accessibilityElement()
-        .accessibilityIdentifier(Accessibility.Views.signinView)
+        .accessibilityIdentifier(Accessibility.Views.logInView)
     }
 }
 
